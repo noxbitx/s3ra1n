@@ -42,7 +42,7 @@ Pixel 4a → SSH → Galaxy S3 (postmarketOS) → USB OTG → iPhone X
 | iCloud bypass (Broque Ramdisk, SN swap + activation token) | ✅ Confirmed |
 | Rootless jailbreak (`-l` flag) | ✅ Confirmed |
 | `--pongo-shell` | ✅ Confirmed |
-| `--device-info` | ❓ Untested |
+| `--device-info` | ❌ Broken |
 | `--force-revert` | ❔ Unknown |
 | `--safe-mode` | ✅ Confirmed |
 | `--verbose-boot` | ✅ Confirmed |
