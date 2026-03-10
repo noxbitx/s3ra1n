@@ -1,4 +1,4 @@
-## 📄 [Fix_Palera1n](./Fix_Palera1n.md) · [Setup](./Setup.md) · [FAQ](./FAQ.md)
+# 📄 [Fix_Palera1n](./Fix_Palera1n.md) · [FAQ](./FAQ.md)
 # s3ra1n — palera1n on Samsung Galaxy S3 (postmarketOS)
 ### Jailbreaking an iPhone X from a 2012 Android phone. Yes, really.
 
