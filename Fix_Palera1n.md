@@ -1,4 +1,4 @@
-# Fix_Palera1n.md — USB Instability Fix for palera1n on postmarketOS (GT-I9300)
+# Fix_Palera1n.md, USB Instability Fix for palera1n on postmarketOS (GT-I9300)
 
 > If palera1n is working fine and then suddenly the iPhone keeps disconnecting,
 > the muic keeps switching connector types, or pmOS bootloops after an unclean
