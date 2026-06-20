@@ -14,7 +14,7 @@
 
 This repo documents running **[palera1n](https://github.com/palera1n/palera1n)** on a **Samsung Galaxy S3 (ARMv7)** running **postmarketOS**, used to successfully jailbreak and iCloud bypass an **iPhone X running iOS 16.7.10**.
 
-This is believed to be the first documented case of palera1n being executed on a repurposed 2012 Android device running Linux. The checkm8 exploit completed successfully (`Checkmate!`) on the **first attempt**, PongoOS booted, the kernel loaded, and a full rootful jailbreak was achieved — all over USB from a Galaxy S3.
+This is believed to be the first documented case of palera1n being executed on a repurposed 2012 Android device running Linux. The checkm8 exploit completed successfully (`Checkmate!`) on the **first attempt**, PongoOS booted, the kernel loaded, and a full rootful jailbreak was achieved, all over USB from a Galaxy S3.
 
 The setup was operated remotely over SSH via tmux from a Pixel 4a, making the full stack:
 
@@ -82,7 +82,7 @@ sudo apk add \
 
 ## Method 1: Use the Official Prebuilt Binary (Recommended)
 
-This is the simplest and most reliable method. The official `palera1n-linux-armel` release binary is statically linked and works out of the box on postmarketOS ARMv7 — no compilation required.
+This is the simplest and most reliable method. The official `palera1n-linux-armel` release binary is statically linked and works out of the box on postmarketOS ARMv7, no compilation required.
 
 ### 1. Download the latest release
 
