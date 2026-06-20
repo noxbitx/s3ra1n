@@ -2,10 +2,10 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/NoxProductions/s3ra1n/total?style=flat&color=brightgreen)
 ![GitHub](https://img.shields.io/github/license/NoxProductions/s3ra1n?style=flat&color=blue)
 
-# t3ra1n - palera1n on android termux using a magisk module + python script, check it out **[here!](https://github.com/NoxProductions/t3ra1n)**
+# t3ra1n, palera1n on android termux using a magisk module + python script, check it out **[here!](https://github.com/NoxProductions/t3ra1n)**
 
 
-# s3ra1n — palera1n on Samsung Galaxy S3 (postmarketOS)
+# s3ra1n, palera1n on Samsung Galaxy S3 (postmarketOS)
 ### Jailbreaking an iPhone X from a 2012 Android phone. Yes, really.
 
 ---
@@ -22,7 +22,7 @@ The setup was operated remotely over SSH via tmux from a Pixel 4a, making the fu
 Pixel 4a → SSH → Galaxy S3 (postmarketOS) → USB OTG → iPhone X
 ```
 
-> **TL;DR:** A potato from 2012 running Linux jailbroke an iPhone X in 2026. The exploit worked first try. checkm8 hit in a single attempt — something that takes 10–15 retries on x86 palen1x.
+> **TL;DR:** A potato from 2012 running Linux jailbroke an iPhone X in 2026. The exploit worked first try. checkm8 hit in a single attempt, something that takes 10–15 retries on x86 palen1x.
 
 ---
 
@@ -102,7 +102,7 @@ chmod +x ~/palera1n
 sudo killall usbmuxd 2>/dev/null; sudo rm -f /var/run/usbmuxd
 ```
 
-### 3. First run — create fakefs
+### 3. First run, create fakefs
 
 On the very first jailbreak, create the fakefs partition:
 
@@ -112,7 +112,7 @@ sudo ~/palera1n -f -B
 
 Wait up to 5 minutes for bindfs creation. The iPhone will reboot into iOS when done.
 
-### 4. Subsequent runs — jailbreak
+### 4. Subsequent runs, jailbreak
 
 After fakefs is set up, every reboot just needs:
 
@@ -136,20 +136,20 @@ cd palera1n-c
 
 ### 2. Apply patches
 
-**Patch 1 — Missing `sys/stat.h` headers (Alpine gcc is strict):**
+**Patch 1, Missing `sys/stat.h` headers (Alpine gcc is strict):**
 ```bash
 grep -rl "struct stat" src/*.c | xargs -I {} sed -i \
   's/#include <sys\/mman.h>/#include <sys\/mman.h>\n#include <sys\/stat.h>/' {}
 ```
 
-**Patch 2 — Remove `-static` linker flag (no static libs for these deps on pmOS):**
+**Patch 2, Remove `-static` linker flag (no static libs for these deps on pmOS):**
 ```bash
 sed -i \
   's/LDFLAGS += -static -no-pie -Wl,--gc-sections/LDFLAGS += -no-pie -Wl,--gc-sections/' \
   Makefile
 ```
 
-**Patch 3 — Create dep_root/lib and symlink system shared libs:**
+**Patch 3, Create dep_root/lib and symlink system shared libs:**
 ```bash
 mkdir -p dep_root/lib dep_root/include
 
@@ -225,7 +225,7 @@ If the iPhone disconnects unexpectedly (e.g. battery death mid-exploit), usbmuxd
 If the iPhone battery dies during PongoOS boot, the fakefs partition can get corrupted. Symptoms: kernel panic on every subsequent run. Fix: `sudo ~/palera1n -f --force-revert` then `sudo ~/palera1n -f -B` to recreate.
 
 ### 5. checkm8 timing on ARMv7
-checkm8 is a USB packet timing exploit, not a CPU exploit. The iPhone's DFU stack doesn't care what's on the other end. Linux's USB host stack is deterministic enough to hit the race condition — in testing it succeeded on the **first attempt**, faster and more reliably than x86 palen1x which typically takes 10–15 tries.
+checkm8 is a USB packet timing exploit, not a CPU exploit. The iPhone's DFU stack doesn't care what's on the other end. Linux's USB host stack is deterministic enough to hit the race condition, in testing it succeeded on the **first attempt**, faster and more reliably than x86 palen1x which typically takes 10–15 tries.
 
 ### 6. libimobiledevice version
 Tested with `libimobiledevice 1.4.0` and `libirecovery 1.3.1` on postmarketOS. The dynamic linking approach (Patch 3) works at runtime but the binary is not portable to other distros without recompiling.
