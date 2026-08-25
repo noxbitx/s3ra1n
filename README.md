@@ -249,7 +249,7 @@ If s3ra1n helped you jailbreak your device without a PC, consider buying me a co
 
 ## Credits
 
-- [palera1n team](https://github.com/palera1n) — for palera1n
-- [checkra1n team](https://checkra.in) — for checkm8 and checkra1n
-- postmarketOS — for making a 2012 phone run Linux in 2026
-- **Noxbit** — for having too much time to create this
+- [palera1n team](https://github.com/palera1n), for palera1n
+- [checkra1n team](https://checkra.in), for checkm8 and checkra1n
+- postmarketOS, for making a 2012 phone run Linux in 2026
+- **Noxbit**, for having too much time to create this
