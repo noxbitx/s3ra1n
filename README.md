@@ -5,8 +5,8 @@
 # t3ra1n, palera1n on android termux using a magisk module + python script, check it out **[here!](https://github.com/NoxProductions/t3ra1n)**
 
 
-# s3ra1n, palera1n on Samsung Galaxy S3 (postmarketOS)
-### Jailbreaking an iPhone X from a 2012 Android phone. Yes, really.
+## s3ra1n, palera1n on Samsung Galaxy S3 (postmarketOS)
+> Jailbreaking an iPhone X from a 2012 Android phone
 
 ---
 
@@ -21,8 +21,6 @@ The setup was operated remotely over SSH via tmux from a Pixel 4a, making the fu
 ```
 Pixel 4a → SSH → Galaxy S3 (postmarketOS) → USB OTG → iPhone X
 ```
-
-> **TL;DR:** A potato from 2012 running Linux jailbroke an iPhone X in 2026. The exploit worked first try. checkm8 hit in a single attempt, something that takes 10–15 retries on x86 palen1x.
 
 ---
 
@@ -254,4 +252,4 @@ If s3ra1n helped you jailbreak your device without a PC, consider buying me a co
 - [palera1n team](https://github.com/palera1n) — for palera1n
 - [checkra1n team](https://checkra.in) — for checkm8 and checkra1n
 - postmarketOS — for making a 2012 phone run Linux in 2026
-- **Noxbit** — for being insane enough to try this
+- **Noxbit** — for having too much time to create this
